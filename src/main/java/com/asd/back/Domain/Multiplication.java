@@ -1,13 +1,14 @@
 package com.asd.back.Domain;
 
+import java.math.BigInteger;
 import java.util.Date;
 
 public class Multiplication {
     private int id;
     private Date dateCreate;
-    private long numberOne;
-    private long numberTwo;
-    private long result;
+    private BigInteger numberOne;
+    private BigInteger numberTwo;
+    private BigInteger result;
 
     public int getId() {return id;}
     public void setId(int id) {this.id = id;}
@@ -15,12 +16,27 @@ public class Multiplication {
     public Date getDateCreate() {return dateCreate;}
     public void setDateCreate(Date dateCreate) {this.dateCreate = dateCreate;}
 
-    public long getNumberOne() {return numberOne;}
-    public void setNumberOne(long numberOne) {this.numberOne = numberOne;}
+    public BigInteger getNumberOne() {
+        return numberOne;
+    }
 
-    public long getNumberTwo() {return numberTwo;}
-    public void setNumberTwo(long numberTwo) {this.numberTwo = numberTwo;}
+    public void setNumberOne(BigInteger numberOne) {
+        this.numberOne = numberOne;
+    }
 
-    public long getResult() {return result;}
-    public void setResult(long result) {this.result = result;}
+    public BigInteger getNumberTwo() {
+        return numberTwo;
+    }
+
+    public void setNumberTwo(BigInteger numberTwo) {
+        this.numberTwo = numberTwo;
+    }
+
+    public BigInteger getResult() {
+        return result;
+    }
+
+    public void setResult(BigInteger result) {
+        this.result = result;
+    }
 }

@@ -1,6 +1,7 @@
 package com.asd.back.Persistence.Entity;
 
 import javax.persistence.*;
+import java.math.BigInteger;
 import java.util.Date;
 
 @Entity
@@ -11,10 +12,10 @@ public class Multiplicacion {
     private Integer id;
     private Date fecha;
     @Column(name = "numerouno")
-    private Long numeroUno;
+    private BigInteger numeroUno;
     @Column(name = "numerodos")
-    private Long numeroDos;
-    private Long resultado;
+    private BigInteger numeroDos;
+    private BigInteger resultado;
 
     public Integer getId() {return id;}
     public void setId(Integer id) {this.id = id;}
@@ -22,12 +23,12 @@ public class Multiplicacion {
     public Date getFecha() {return fecha;}
     public void setFecha(Date fecha) {this.fecha = fecha;}
 
-    public Long getNumeroUno() {return numeroUno;}
-    public void setNumeroUno(Long numeroUno) {this.numeroUno = numeroUno;}
+    public BigInteger getNumeroUno() {return numeroUno;}
+    public void setNumeroUno(BigInteger numeroUno) {this.numeroUno = numeroUno;}
 
-    public Long getNumeroDos() {return numeroDos;}
-    public void setNumeroDos(Long numeroDos) {this.numeroDos = numeroDos;}
+    public BigInteger getNumeroDos() {return numeroDos;}
+    public void setNumeroDos(BigInteger numeroDos) {this.numeroDos = numeroDos;}
 
-    public Long getResultado() {return resultado;}
-    public void setResultado(Long resultado) {this.resultado = resultado;}
+    public BigInteger getResultado() {return resultado;}
+    public void setResultado(BigInteger resultado) {this.resultado = resultado;}
 }
