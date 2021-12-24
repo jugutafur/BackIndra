@@ -11,10 +11,10 @@ public class Multiplicacion {
     private Integer id;
     private Date fecha;
     @Column(name = "numerouno")
-    private Integer numeroUno;
+    private Long numeroUno;
     @Column(name = "numerodos")
-    private Integer numeroDos;
-    private Integer resultado;
+    private Long numeroDos;
+    private Long resultado;
 
     public Integer getId() {return id;}
     public void setId(Integer id) {this.id = id;}
@@ -22,12 +22,12 @@ public class Multiplicacion {
     public Date getFecha() {return fecha;}
     public void setFecha(Date fecha) {this.fecha = fecha;}
 
-    public Integer getNumeroUno() {return numeroUno;}
-    public void setNumeroUno(Integer numeroUno) {this.numeroUno = numeroUno;}
+    public Long getNumeroUno() {return numeroUno;}
+    public void setNumeroUno(Long numeroUno) {this.numeroUno = numeroUno;}
 
-    public Integer getNumeroDos() {return numeroDos;}
-    public void setNumeroDos(Integer numeroDos) {this.numeroDos = numeroDos;}
+    public Long getNumeroDos() {return numeroDos;}
+    public void setNumeroDos(Long numeroDos) {this.numeroDos = numeroDos;}
 
-    public Integer getResultado() {return resultado;}
-    public void setResultado(Integer resultado) {this.resultado = resultado;}
+    public Long getResultado() {return resultado;}
+    public void setResultado(Long resultado) {this.resultado = resultado;}
 }

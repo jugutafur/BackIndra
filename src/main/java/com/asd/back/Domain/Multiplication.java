@@ -5,9 +5,9 @@ import java.util.Date;
 public class Multiplication {
     private int id;
     private Date dateCreate;
-    private int numberOne;
-    private int numberTwo;
-    private int result;
+    private long numberOne;
+    private long numberTwo;
+    private long result;
 
     public int getId() {return id;}
     public void setId(int id) {this.id = id;}
@@ -15,12 +15,12 @@ public class Multiplication {
     public Date getDateCreate() {return dateCreate;}
     public void setDateCreate(Date dateCreate) {this.dateCreate = dateCreate;}
 
-    public int getNumberOne() {return numberOne;}
-    public void setNumberOne(int numberOne) {this.numberOne = numberOne;}
+    public long getNumberOne() {return numberOne;}
+    public void setNumberOne(long numberOne) {this.numberOne = numberOne;}
 
-    public int getNumberTwo() {return numberTwo;}
-    public void setNumberTwo(int numberTwo) {this.numberTwo = numberTwo;}
+    public long getNumberTwo() {return numberTwo;}
+    public void setNumberTwo(long numberTwo) {this.numberTwo = numberTwo;}
 
-    public int getResult() {return result;}
-    public void setResult(int result) {this.result = result;}
+    public long getResult() {return result;}
+    public void setResult(long result) {this.result = result;}
 }
